@@ -1,0 +1,69 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://FontsThemesTilesets/TextTheme.tres" type="Theme" id=1]
+[ext_resource path="res://Main_menu/MainMenu.gd" type="Script" id=2]
+[ext_resource path="res://Main_menu/Le bassin.png" type="Texture" id=3]
+[ext_resource path="res://FontsThemesTilesets/PixelTitle.tres" type="DynamicFont" id=4]
+
+[sub_resource type="Theme" id=1]
+
+[node name="MainMenu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = SubResource( 1 )
+script = ExtResource( 2 )
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_right = 320.0
+margin_bottom = 180.0
+texture = ExtResource( 3 )
+expand = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+margin_left = 4.0
+margin_top = 124.0
+margin_right = 65.0
+margin_bottom = 176.0
+theme = ExtResource( 1 )
+
+[node name="StartButton" type="Button" parent="VBoxContainer"]
+margin_right = 61.0
+margin_bottom = 10.0
+focus_neighbour_top = NodePath("../QuitButton")
+text = "New"
+align = 0
+
+[node name="LoadButton" type="Button" parent="VBoxContainer"]
+margin_top = 14.0
+margin_right = 61.0
+margin_bottom = 24.0
+text = "Load"
+align = 0
+
+[node name="OptionButton" type="Button" parent="VBoxContainer"]
+margin_top = 28.0
+margin_right = 61.0
+margin_bottom = 38.0
+text = "Options"
+align = 0
+
+[node name="QuitButton" type="Button" parent="VBoxContainer"]
+margin_top = 42.0
+margin_right = 61.0
+margin_bottom = 52.0
+focus_neighbour_bottom = NodePath("../StartButton")
+text = "Quit"
+align = 0
+
+[node name="Title" type="Label" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -137.5
+margin_top = 4.0
+margin_right = 137.5
+margin_bottom = 39.0
+custom_colors/font_color = Color( 0.203922, 0.113725, 0.054902, 1 )
+custom_fonts/font = ExtResource( 4 )
+text = "Stories of the Fallen Empire
+Clovis Dagarik"
+align = 1
