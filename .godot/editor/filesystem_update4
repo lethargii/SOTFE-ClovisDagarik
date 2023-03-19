@@ -1,8 +1,0 @@
-res://default_env.tres
-res://FontsThemesTilesets/Title.tres
-res://Characters/Player/Player.tres
-res://Levels/layers.tscn
-res://Levels/level.tscn
-res://game.tscn
-res://Characters/Player/Player.tscn
-res://Main_menu/MainMenu.tscn

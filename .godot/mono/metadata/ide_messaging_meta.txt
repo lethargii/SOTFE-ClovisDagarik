@@ -1,2 +1,0 @@
-﻿61721
-C:/Program Files (x86)/Steam/steamapps/common/Godot Engine/Godot_v4.0-stable_mono_win64.exe
