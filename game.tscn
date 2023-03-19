@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://cieb5dm07p0qv"]
+
+[ext_resource type="PackedScene" uid="uid://dndj3qexdwnc8" path="res://Main_menu/MainMenu.tscn" id="1_cmoho"]
+[ext_resource type="Script" path="res://game.cs" id="1_flwh7"]
+
+[node name="Game" type="Node"]
+script = ExtResource("1_flwh7")
+
+[node name="Level" type="Node2D" parent="."]
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="MainMenu" parent="UI" instance=ExtResource("1_cmoho")]

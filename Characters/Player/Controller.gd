@@ -1,9 +1,9 @@
 extends Node
 
-onready var player = get_parent()
-onready var stats = player.get_node("Stats")
-onready var cam = player.get_node("Cam")
-onready var animated_sprite = player.get_node("AnimatedSprite")
+@onready var player = get_parent()
+@onready var stats = player.get_node("Stats")
+@onready var cam = player.get_node("Cam")
+@onready var animated_sprite = player.get_node("AnimatedSprite2D")
 
 var speed = 80
 var jump_speed = 480
@@ -14,7 +14,7 @@ var weapons = ["Sword", "Spear", "Bow"]
 var weapon = weapons[0]
 
 func _ready():
-	animated_sprite.connect("animation_finished", self, "animation_finished")
+	animated_sprite.connect("animation_finished",Callable(self,"animation_finished"))
 
 func _physics_process(delta):
 	match player.state:

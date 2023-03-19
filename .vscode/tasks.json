@@ -3,7 +3,7 @@
     "tasks": [
         {
             "label": "build",
-            "command": "C:/Program Files (x86)/Steam/steamapps/common/Godot Engine/godot.windows.opt.tools.64.exe\r",
+            "command": "C:/Program Files (x86)/Steam/steamapps/common/Godot Engine/godot.windows.opt.tools.64.exe",
             "type": "process",
             "args": [
                 "--build-solutions",

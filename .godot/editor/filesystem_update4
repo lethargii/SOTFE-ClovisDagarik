@@ -1,0 +1,9 @@
+res://default_env.tres
+res://UI/HealthUI.tscn
+res://game.tscn
+res://Main_menu/MainMenu.tscn
+res://UI/DialogueBox.tscn
+res://Characters/Character.tscn
+res://Characters/Character.gd
+res://Characters/Player/Player.tscn
+res://Characters/Player/Camera/Cam.tscn

@@ -1,7 +1,7 @@
 extends Node
 
-var max_health = 3 setget set_max_health
-var health = max_health setget set_health
+var max_health = 3 : set = set_max_health
+var health = max_health : set = set_health
 signal no_health
 signal health_changed
 signal max_health_changed
