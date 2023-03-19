@@ -5,15 +5,15 @@
     <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
     <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
     <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
-    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\Lethargii\.nuget\packages\;C:\Program Files (x86)\Steam\steamapps\common\Godot Engine\editor_data\mono\GodotNuGetFallbackFolder</NuGetPackageFolders>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\Lethargii\.nuget\packages\;C:\Users\Lethargii\AppData\Roaming\Godot\mono\GodotNuGetFallbackFolder</NuGetPackageFolders>
     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
     <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.5.0</NuGetToolVersion>
   </PropertyGroup>
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <SourceRoot Include="C:\Users\Lethargii\.nuget\packages\" />
-    <SourceRoot Include="C:\Program Files (x86)\Steam\steamapps\common\Godot Engine\editor_data\mono\GodotNuGetFallbackFolder\" />
+    <SourceRoot Include="C:\Users\Lethargii\AppData\Roaming\Godot\mono\GodotNuGetFallbackFolder\" />
   </ItemGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Import Project="C:\Program Files (x86)\Steam\steamapps\common\Godot Engine\editor_data\mono\GodotNuGetFallbackFolder\godot.sourcegenerators\4.0.0\build\Godot.SourceGenerators.props" Condition="Exists('C:\Program Files (x86)\Steam\steamapps\common\Godot Engine\editor_data\mono\GodotNuGetFallbackFolder\godot.sourcegenerators\4.0.0\build\Godot.SourceGenerators.props')" />
+    <Import Project="$(UserProfile)\AppData\Roaming\Godot\mono\GodotNuGetFallbackFolder\godot.sourcegenerators\4.0.0\build\Godot.SourceGenerators.props" Condition="Exists('$(UserProfile)\AppData\Roaming\Godot\mono\GodotNuGetFallbackFolder\godot.sourcegenerators\4.0.0\build\Godot.SourceGenerators.props')" />
   </ImportGroup>
 </Project>

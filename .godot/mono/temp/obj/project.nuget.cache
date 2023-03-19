@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "fOeE422Ba8yM47CFVQCF8opBojZuNfRLaBEXbm4ZQ0QyPZvQci7lIhEvWSA63oIHbVJ0Qb4Lklz7DXWrl1CwiA==",
+  "dgSpecHash": "53yzufAs9/54RvocZdwCtsK4s758Kg3/7Sbe0tAQmbi4JBic0fgaCJewpRu+cV7+qfPba1HtApHBgBrYfsg4Uw==",
   "success": true,
   "projectFilePath": "D:\\Documents\\SOTFE-ClovisDagarik\\Stories of the Fallen Empire - Clovis Dagarik.csproj",
   "expectedPackageFiles": [
-    "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Godot Engine\\editor_data\\mono\\GodotNuGetFallbackFolder\\godot.sourcegenerators\\4.0.0\\godot.sourcegenerators.4.0.0.nupkg.sha512",
-    "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Godot Engine\\editor_data\\mono\\GodotNuGetFallbackFolder\\godotsharp\\4.0.0\\godotsharp.4.0.0.nupkg.sha512",
-    "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Godot Engine\\editor_data\\mono\\GodotNuGetFallbackFolder\\godotsharpeditor\\4.0.0\\godotsharpeditor.4.0.0.nupkg.sha512",
+    "C:\\Users\\Lethargii\\AppData\\Roaming\\Godot\\mono\\GodotNuGetFallbackFolder\\godot.sourcegenerators\\4.0.0\\godot.sourcegenerators.4.0.0.nupkg.sha512",
+    "C:\\Users\\Lethargii\\AppData\\Roaming\\Godot\\mono\\GodotNuGetFallbackFolder\\godotsharp\\4.0.0\\godotsharp.4.0.0.nupkg.sha512",
+    "C:\\Users\\Lethargii\\AppData\\Roaming\\Godot\\mono\\GodotNuGetFallbackFolder\\godotsharpeditor\\4.0.0\\godotsharpeditor.4.0.0.nupkg.sha512",
     "C:\\Users\\Lethargii\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.14\\microsoft.netcore.app.ref.6.0.14.nupkg.sha512",
     "C:\\Users\\Lethargii\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.14\\microsoft.windowsdesktop.app.ref.6.0.14.nupkg.sha512",
     "C:\\Users\\Lethargii\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.14\\microsoft.aspnetcore.app.ref.6.0.14.nupkg.sha512"

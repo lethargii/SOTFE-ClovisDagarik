@@ -14,7 +14,7 @@
         "outputPath": "D:\\Documents\\SOTFE-ClovisDagarik\\.godot\\mono\\temp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Godot Engine\\editor_data\\mono\\GodotNuGetFallbackFolder"
+          "C:\\Users\\Lethargii\\AppData\\Roaming\\Godot\\mono\\GodotNuGetFallbackFolder"
         ],
         "configFilePaths": [
           "C:\\Users\\Lethargii\\AppData\\Roaming\\NuGet\\NuGet.Config",

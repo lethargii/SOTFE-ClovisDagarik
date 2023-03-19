@@ -1,29 +1,52 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=2 format=3 uid="uid://ojgvf5e2683i"]
 
-[ext_resource path="res://Levels/Layer.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Levels/Level.gd" type="Script" id=2]
-
-[sub_resource type="Environment" id=1]
-background_mode = 4
+[ext_resource type="TileSet" uid="uid://d3ojl0o8rsbn2" path="res://Levels/Tileset.tres" id="1_e0qjw"]
 
 [node name="Level" type="Node2D"]
-script = ExtResource( 2 )
 
-[node name="Layer1" parent="." instance=ExtResource( 1 )]
+[node name="Background" type="ParallaxBackground" parent="."]
+scroll_ignore_camera_zoom = true
 
-[node name="Layer2" parent="." instance=ExtResource( 1 )]
+[node name="TextureRect" type="TextureRect" parent="Background"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
-[node name="Layer3" parent="." instance=ExtResource( 1 )]
+[node name="Layers" type="TileMap" parent="."]
+tile_set = ExtResource("1_e0qjw")
+format = 2
+layer_0/name = "Layer1"
+layer_0/y_sort_enabled = true
+layer_0/z_index = -1
+layer_1/name = "Layer2"
+layer_1/enabled = true
+layer_1/modulate = Color(1, 1, 1, 1)
+layer_1/y_sort_enabled = true
+layer_1/y_sort_origin = 0
+layer_1/z_index = 0
+layer_1/tile_data = PackedInt32Array()
+layer_2/name = "Layer3"
+layer_2/enabled = true
+layer_2/modulate = Color(1, 1, 1, 1)
+layer_2/y_sort_enabled = true
+layer_2/y_sort_origin = 0
+layer_2/z_index = 1
+layer_2/tile_data = PackedInt32Array()
+layer_3/name = "Layer4"
+layer_3/enabled = true
+layer_3/modulate = Color(1, 1, 1, 1)
+layer_3/y_sort_enabled = true
+layer_3/y_sort_origin = 0
+layer_3/z_index = 2
+layer_3/tile_data = PackedInt32Array()
+layer_4/name = "Layer5"
+layer_4/enabled = true
+layer_4/modulate = Color(1, 1, 1, 1)
+layer_4/y_sort_enabled = true
+layer_4/y_sort_origin = 0
+layer_4/z_index = 3
+layer_4/tile_data = PackedInt32Array()
 
-[node name="Script" type="Node" parent="."]
-
-[node name="PlayerPos" type="Node" parent="."]
-
-[node name="CamLimits" type="Node" parent="."]
-
-[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
-environment = SubResource( 1 )
-
-[editable path="Layer1"]
-[editable path="Layer2"]
-[editable path="Layer3"]
+[node name="Météo" type="GPUParticles2D" parent="."]

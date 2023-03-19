@@ -1,9 +1,8 @@
 res://default_env.tres
-res://Main_menu/MainMenu.tscn
+res://FontsThemesTilesets/Title.tres
+res://Characters/Player/Player.tres
+res://Levels/layers.tscn
+res://Levels/level.tscn
 res://game.tscn
-res://UI/DialogueBox.tscn
-res://UI/HealthUI.tscn
 res://Characters/Player/Player.tscn
-res://Characters/Player/Camera/Cam.tscn
-res://Characters/Character.tscn
-res://Main_menu/MainMenu.gd
+res://Main_menu/MainMenu.tscn

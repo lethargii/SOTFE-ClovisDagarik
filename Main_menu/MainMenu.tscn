@@ -1,40 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://dndj3qexdwnc8"]
+[gd_scene load_steps=6 format=3 uid="uid://dndj3qexdwnc8"]
 
 [ext_resource type="Script" path="res://Main_menu/MainMenu.gd" id="2"]
 [ext_resource type="Texture2D" uid="uid://4bk6uhmydm58" path="res://Main_menu/Le bassin.png" id="3"]
-[ext_resource type="FontFile" uid="uid://dc3ych86fpwni" path="res://FontsThemesTilesets/zx-spectrum.ttf" id="3_ddctc"]
+[ext_resource type="Theme" uid="uid://bq62o1qq0b2or" path="res://FontsThemesTilesets/Title.tres" id="3_3p4vx"]
+[ext_resource type="Theme" uid="uid://bms6gf0lrtkb7" path="res://FontsThemesTilesets/Menu.tres" id="4_rxsck"]
 
 [sub_resource type="Theme" id="1"]
-
-[sub_resource type="FontFile" id="4"]
-fallbacks = Array[Font]([ExtResource("3_ddctc")])
-face_index = null
-embolden = null
-transform = null
-cache/0/16/0/ascent = 0.0
-cache/0/16/0/descent = 0.0
-cache/0/16/0/underline_position = 0.0
-cache/0/16/0/underline_thickness = 0.0
-cache/0/16/0/scale = 1.0
-cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
-
-[sub_resource type="StyleBoxFlat" id="2"]
-bg_color = Color(0.6, 0.6, 0.6, 0)
-
-[sub_resource type="Theme" id="Theme_6lir0"]
-default_font = SubResource("4")
-Button/colors/font_color = Color(0.878431, 0.878431, 0.878431, 1)
-Button/colors/font_color_disabled = Color(0.9, 0.9, 0.9, 0.2)
-Button/colors/font_color_focus = Color(0.901961, 0.901961, 0.0784314, 1)
-Button/colors/font_color_hover = Color(0.901961, 0.901961, 0.0784314, 1)
-Button/colors/font_color_pressed = Color(1, 1, 1, 1)
-Button/constants/hseparation = 2
-Button/fonts/font = SubResource("4")
-Button/styles/disabled = SubResource("2")
-Button/styles/focus = SubResource("2")
-Button/styles/hover = SubResource("2")
-Button/styles/normal = SubResource("2")
-Button/styles/pressed = SubResource("2")
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -54,38 +25,51 @@ texture = ExtResource("3")
 expand_mode = 1
 
 [node name="Title" type="Label" parent="."]
-layout_mode = 0
+layout_mode = 1
+anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
 offset_left = -137.5
 offset_top = 4.0
 offset_right = 137.5
 offset_bottom = 56.0
+grow_horizontal = 2
+theme = ExtResource("3_3p4vx")
 text = "Stories of the Fallen Empire
 Clovis Dagarik"
+horizontal_alignment = 1
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_direction = 2
 layout_mode = 0
-offset_left = 4.0
-offset_top = 124.0
-offset_right = 65.0
-offset_bottom = 176.0
-theme = SubResource("Theme_6lir0")
+offset_left = 5.0
+offset_top = 115.0
+offset_right = 94.0
+offset_bottom = 179.0
+theme = ExtResource("4_rxsck")
 
 [node name="StartButton" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 focus_neighbor_top = NodePath("../QuitButton")
+button_mask = 0
 text = "New"
+alignment = 0
 
 [node name="LoadButton" type="Button" parent="VBoxContainer"]
 layout_mode = 2
+button_mask = 0
 text = "Load"
+alignment = 0
 
 [node name="OptionButton" type="Button" parent="VBoxContainer"]
 layout_mode = 2
+button_mask = 0
 text = "Options"
+alignment = 0
 
 [node name="QuitButton" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 focus_neighbor_bottom = NodePath("../StartButton")
+button_mask = 0
 text = "Quit"
+alignment = 0

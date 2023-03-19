@@ -1,6 +1,7 @@
 extends Control
 
 func _ready():
+	var game = get_parent()
 	$VBoxContainer/StartButton.grab_focus()
 	$VBoxContainer/StartButton.connect("pressed",Callable(self,"start_button"))
 	$VBoxContainer/LoadButton.connect("pressed",Callable(self,"load_button"))
@@ -8,13 +9,8 @@ func _ready():
 	$VBoxContainer/QuitButton.connect("pressed",Callable(self,"quit_button"))
 
 func start_button():
-	var root = get_tree().root
-	var main_menu = root.get_node("MainMenu")
-	root.remove_child(main_menu)
-	var level = load("res://Levels/Level314/Level314.tscn").instantiate()
-	root.add_child(level)
-	var player = load("res://Characters/Player/Player.tscn").instantiate()
-	level.layer_1.playerground.add_child(player)
+	game.ChangeLevel("res://Characters/Player/Player.tscn")
+	queue_free()
 	
 func load_button():
 	pass

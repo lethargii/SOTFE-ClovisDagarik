@@ -1,0 +1,26 @@
+[gd_resource type="Theme" load_steps=7 format=3 uid="uid://bms6gf0lrtkb7"]
+
+[ext_resource type="FontFile" uid="uid://dc3ych86fpwni" path="res://FontsThemesTilesets/zx-spectrum.ttf" id="1_8vsi8"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_2p6xn"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_d4kyd"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_o1tdg"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ai6fv"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_j86kj"]
+
+[resource]
+default_font = ExtResource("1_8vsi8")
+default_font_size = 11
+Button/colors/font_color = Color(1, 1, 1, 1)
+Button/colors/font_disabled_color = Color(1, 1, 1, 1)
+Button/colors/font_focus_color = Color(1, 1, 1, 1)
+Button/colors/font_hover_color = Color(1, 1, 1, 1)
+Button/styles/disabled = SubResource("StyleBoxTexture_2p6xn")
+Button/styles/focus = SubResource("StyleBoxTexture_d4kyd")
+Button/styles/hover = SubResource("StyleBoxTexture_o1tdg")
+Button/styles/normal = SubResource("StyleBoxTexture_ai6fv")
+Button/styles/pressed = SubResource("StyleBoxTexture_j86kj")

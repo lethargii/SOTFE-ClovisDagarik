@@ -1,3 +1,11 @@
-Node2D
+TextureRect
+ParallaxBackground
 CanvasLayer
+Sprite2D
+GPUParticles2D
+MeshInstance2D
+CanvasModulate
+TileMap
+TextureButton
+Node2D
 Node
