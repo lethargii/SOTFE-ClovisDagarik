@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://b68yasl77lsca"]
+
+[ext_resource type="Material" uid="uid://cj8t365keutrb" path="res://FontsThemesTilesets/Water_material.tres" id="1_wo322"]
+[ext_resource type="Texture2D" uid="uid://q2mwilttqhli" path="res://icon.png" id="2_6j5yh"]
+
+[node name="Node2D" type="Sprite2D"]
+material = ExtResource("1_wo322")
+position = Vector2(32, 32)
+texture = ExtResource("2_6j5yh")

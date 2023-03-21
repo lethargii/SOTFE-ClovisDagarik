@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://dndj3qexdwnc8"]
 
-[ext_resource type="Script" path="res://Main_menu/MainMenu.gd" id="2"]
+[ext_resource type="Script" path="res://Main_menu/MainMenu.cs" id="1_46w6e"]
 [ext_resource type="Texture2D" uid="uid://4bk6uhmydm58" path="res://Main_menu/Le bassin.png" id="3"]
 [ext_resource type="Theme" uid="uid://bq62o1qq0b2or" path="res://FontsThemesTilesets/Title.tres" id="3_3p4vx"]
 [ext_resource type="Theme" uid="uid://bms6gf0lrtkb7" path="res://FontsThemesTilesets/Menu.tres" id="4_rxsck"]
@@ -15,7 +15,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme = SubResource("1")
-script = ExtResource("2")
+script = ExtResource("1_46w6e")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 0
@@ -39,7 +39,7 @@ text = "Stories of the Fallen Empire
 Clovis Dagarik"
 horizontal_alignment = 1
 
-[node name="VBoxContainer" type="VBoxContainer" parent="."]
+[node name="Buttons" type="VBoxContainer" parent="."]
 layout_direction = 2
 layout_mode = 0
 offset_left = 5.0
@@ -48,26 +48,26 @@ offset_right = 94.0
 offset_bottom = 179.0
 theme = ExtResource("4_rxsck")
 
-[node name="StartButton" type="Button" parent="VBoxContainer"]
+[node name="StartButton" type="Button" parent="Buttons"]
 layout_mode = 2
 focus_neighbor_top = NodePath("../QuitButton")
 button_mask = 0
 text = "New"
 alignment = 0
 
-[node name="LoadButton" type="Button" parent="VBoxContainer"]
+[node name="LoadButton" type="Button" parent="Buttons"]
 layout_mode = 2
 button_mask = 0
 text = "Load"
 alignment = 0
 
-[node name="OptionButton" type="Button" parent="VBoxContainer"]
+[node name="OptionButton" type="Button" parent="Buttons"]
 layout_mode = 2
 button_mask = 0
 text = "Options"
 alignment = 0
 
-[node name="QuitButton" type="Button" parent="VBoxContainer"]
+[node name="QuitButton" type="Button" parent="Buttons"]
 layout_mode = 2
 focus_neighbor_bottom = NodePath("../StartButton")
 button_mask = 0

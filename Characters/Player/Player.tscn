@@ -19,7 +19,7 @@ texture = ExtResource("1")
 modulate = Color(1, 1, 1, 1)
 position = Vector2(0, -11)
 sprite_frames = ExtResource("3_od4jh")
-animation = &"RunUp"
+animation = &"IdleDown"
 
 [node name="CollisionShape2D" parent="." index="2"]
 position = Vector2(0, -3)
