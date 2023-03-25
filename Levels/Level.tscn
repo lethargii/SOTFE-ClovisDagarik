@@ -1,6 +1,5 @@
-[gd_scene load_steps=3 format=3 uid="uid://ojgvf5e2683i"]
+[gd_scene load_steps=2 format=3 uid="uid://ojgvf5e2683i"]
 
-[ext_resource type="Texture2D" uid="uid://q2mwilttqhli" path="res://icon.png" id="1_1coul"]
 [ext_resource type="TileSet" uid="uid://d3ojl0o8rsbn2" path="res://Levels/Tileset.tres" id="1_e0qjw"]
 
 [node name="Level" type="Node2D"]
@@ -14,7 +13,6 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("1_1coul")
 
 [node name="Layers" type="TileMap" parent="."]
 tile_set = ExtResource("1_e0qjw")
@@ -22,7 +20,6 @@ format = 2
 layer_0/name = "Layer1"
 layer_0/y_sort_enabled = true
 layer_0/z_index = -1
-layer_0/tile_data = PackedInt32Array(196613, 1, 0, 262149, 1, 0, 327685, 1, 0, 393221, 1, 0, 196614, 1, 0, 262150, 1, 0, 327686, 1, 0, 393222, 1, 0, 196615, 1, 0, 262151, 1, 0, 327687, 1, 0, 393223, 1, 0, 196616, 1, 0, 262152, 1, 0, 327688, 1, 0, 393224, 1, 0, 196617, 1, 0, 262153, 1, 0, 327689, 1, 0, 393225, 1, 0, 196618, 1, 0, 262154, 1, 0, 327690, 1, 0, 393226, 1, 0, 196619, 1, 0, 262155, 1, 0, 327691, 1, 0, 393227, 1, 0, 196620, 1, 0, 262156, 1, 0, 327692, 1, 0, 393228, 1, 0, 196621, 1, 0, 262157, 1, 0, 327693, 1, 0, 393229, 1, 0)
 layer_1/name = "Layer2"
 layer_1/enabled = true
 layer_1/modulate = Color(1, 1, 1, 1)

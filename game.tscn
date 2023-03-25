@@ -6,9 +6,4 @@
 [node name="Game" type="Node"]
 script = ExtResource("1_flwh7")
 
-[node name="Level" type="Node2D" parent="."]
-
-[node name="UI" type="CanvasLayer" parent="."]
-layer = 100
-
 [node name="MainMenu" parent="." instance=ExtResource("1_cmoho")]

@@ -1,0 +1,9 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://dqbcdadc4yv5"]
+
+[ext_resource type="Shader" path="res://Shadow.gdshader" id="1_lobq3"]
+
+[resource]
+shader = ExtResource("1_lobq3")
+shader_parameter/shadow_color = null
+shader_parameter/sprite_sheet_size = Vector2(1632, 3072)
+shader_parameter/frame_size = Vector2(272, 512)

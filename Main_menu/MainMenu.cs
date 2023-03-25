@@ -5,6 +5,8 @@ using System;
 
 public partial class MainMenu : Control
 {
+	[Signal]
+	public delegate void StartEventHandler(NodePath path);
 	game game;
 	public override void _Ready()
 	{
@@ -19,7 +21,7 @@ public partial class MainMenu : Control
 
 	void StartButton()
 	{
-		game.ChangeLevel("res://Characters/Player/Player.tscn");
+		EmitSignal("Start","res://Characters/Player/Player.tscn");
 		QueueFree();
 	}
 	public void LoadButton()
