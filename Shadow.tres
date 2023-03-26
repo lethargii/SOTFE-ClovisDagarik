@@ -4,6 +4,6 @@
 
 [resource]
 shader = ExtResource("1_lobq3")
-shader_parameter/shadow_color = null
-shader_parameter/sprite_sheet_size = Vector2(1632, 3072)
-shader_parameter/frame_size = Vector2(272, 512)
+shader_parameter/shadow_color = Color(0, 0, 0, 0.784314)
+shader_parameter/x_translation = 1.0
+shader_parameter/y_translation = 0.0

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ba83o0ujqaish"
-path="res://.godot/imported/LifeBarOver.png-39efe4257464621c8c02d6baea0763bb.ctex"
+path="res://.godot/imported/LifeBarOver.png-ced61d9efc0d5435518bf1f06eb03608.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UI/LifeBarOver.png"
-dest_files=["res://.godot/imported/LifeBarOver.png-39efe4257464621c8c02d6baea0763bb.ctex"]
+source_file="res://UI/HealthUI/LifeBarOver.png"
+dest_files=["res://.godot/imported/LifeBarOver.png-ced61d9efc0d5435518bf1f06eb03608.ctex"]
 
 [params]
 
