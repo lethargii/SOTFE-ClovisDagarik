@@ -1,8 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://ojgvf5e2683i"]
+[gd_scene load_steps=3 format=3 uid="uid://ojgvf5e2683i"]
 
 [ext_resource type="TileSet" uid="uid://d3ojl0o8rsbn2" path="res://Levels/Tileset.tres" id="1_e0qjw"]
+[ext_resource type="Script" path="res://Levels/level.cs" id="1_mssco"]
 
 [node name="Level" type="Node2D"]
+script = ExtResource("1_mssco")
 
 [node name="Background" type="ParallaxBackground" parent="."]
 scroll_ignore_camera_zoom = true
