@@ -1,10 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://ojgvf5e2683i"]
+[gd_scene load_steps=3 format=3 uid="uid://b4iqtrhkup5kt"]
 
-[ext_resource type="TileSet" uid="uid://d3ojl0o8rsbn2" path="res://Levels/Tileset.tres" id="1_e0qjw"]
-[ext_resource type="Script" path="res://Levels/level.cs" id="1_mssco"]
+[ext_resource type="Script" path="res://Levels/Level.cs" id="1_jg8i2"]
+[ext_resource type="TileSet" uid="uid://d3ojl0o8rsbn2" path="res://Levels/Tileset.tres" id="2_gip46"]
 
 [node name="Level" type="Node2D"]
-script = ExtResource("1_mssco")
+script = ExtResource("1_jg8i2")
 
 [node name="Background" type="ParallaxBackground" parent="."]
 scroll_ignore_camera_zoom = true
@@ -17,7 +17,7 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="Layers" type="TileMap" parent="."]
-tile_set = ExtResource("1_e0qjw")
+tile_set = ExtResource("2_gip46")
 format = 2
 layer_0/name = "Layer1"
 layer_0/y_sort_enabled = true

@@ -12,6 +12,7 @@ material = ExtResource("4_3xxqd")
 position = Vector2(0, -11)
 sprite_frames = ExtResource("3_od4jh")
 animation = &"IdleDown"
+autoplay = "RunRight"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -3)

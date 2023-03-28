@@ -1,8 +1,10 @@
 using Godot;
 using System;
 
-public partial class level : Node2D
+public partial class Level : Node2D
 {
+	[Signal]
+	public delegate void ChangeLevelEventHandler(NodePath path);
 	public override void _Ready()
 	{
 		ParallaxBackground background = GetNode<ParallaxBackground>("Background");

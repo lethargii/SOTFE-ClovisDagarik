@@ -6,7 +6,7 @@ using System;
 public partial class MainMenu : Control
 {
 	[Signal]
-	public delegate void StartEventHandler(NodePath path);
+	public delegate void StartEventHandler();
 	game game;
 	public override void _Ready()
 	{
@@ -21,7 +21,7 @@ public partial class MainMenu : Control
 
 	void StartButton()
 	{
-		EmitSignal("Start","res://Characters/Player/Player.tscn");
+		EmitSignal("Start");
 		QueueFree();
 	}
 	public void LoadButton()
