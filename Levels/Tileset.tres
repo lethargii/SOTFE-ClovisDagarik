@@ -1,6 +1,8 @@
-[gd_resource type="TileSet" load_steps=3 format=3 uid="uid://d3ojl0o8rsbn2"]
+[gd_resource type="TileSet" load_steps=6 format=3 uid="uid://d3ojl0o8rsbn2"]
 
 [ext_resource type="Texture2D" uid="uid://tm4ihmvrluc" path="res://FontsThemesTilesets/Tileset.png" id="1_umhpa"]
+[ext_resource type="Material" uid="uid://cj8t365keutrb" path="res://FontsThemesTilesets/Water_material.tres" id="2_vs78i"]
+[ext_resource type="Texture2D" uid="uid://q2mwilttqhli" path="res://icon.png" id="3_ddjjw"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_io0pk"]
 texture = ExtResource("1_umhpa")
@@ -9,5 +11,12 @@ texture = ExtResource("1_umhpa")
 0:1/0 = 0
 1:1/0 = 0
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yuwic"]
+texture = ExtResource("3_ddjjw")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+0:0/0/material = ExtResource("2_vs78i")
+
 [resource]
 sources/0 = SubResource("TileSetAtlasSource_io0pk")
+sources/1 = SubResource("TileSetAtlasSource_yuwic")

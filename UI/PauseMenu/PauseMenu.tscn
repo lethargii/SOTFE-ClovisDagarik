@@ -1,29 +1,20 @@
 [gd_scene load_steps=3 format=3 uid="uid://yp0cpwmrc2gq"]
 
-[ext_resource type="Script" path="res://UI/PauseMenu.gd" id="2"]
-[ext_resource type="Theme" path="res://FontsThemesTilesets/Menu.tres" id="2_5gd12"]
+[ext_resource type="Script" path="res://UI/PauseMenu/PauseMenu.cs" id="1_r2tgt"]
+[ext_resource type="Theme" uid="uid://bms6gf0lrtkb7" path="res://FontsThemesTilesets/Menu.tres" id="2_5gd12"]
 
 [node name="PauseMenu" type="CanvasLayer"]
 process_mode = 2
 layer = 100
-script = ExtResource("2")
+script = ExtResource("1_r2tgt")
 
-[node name="PauseMenu" type="Control" parent="."]
-layout_mode = 3
+[node name="ColorRect" type="ColorRect" parent="."]
 anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="ColorRect" type="ColorRect" parent="PauseMenu"]
-layout_mode = 0
 anchor_right = 1.0
 anchor_bottom = 1.0
 color = Color(0, 0, 0, 0.372549)
 
-[node name="Label" type="Label" parent="PauseMenu"]
-layout_mode = 1
+[node name="Label" type="Label" parent="."]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5

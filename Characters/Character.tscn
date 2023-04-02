@@ -1,0 +1,22 @@
+[gd_scene load_steps=2 format=3 uid="uid://dpyecs4g0tb1s"]
+
+[sub_resource type="CSharpScript" id="CSharpScript_uduq8"]
+script/source = "using Godot;
+using System;
+
+public partial class Player : Ennemy
+{
+
+}
+"
+
+[node name="Character" type="CharacterBody2D"]
+script = SubResource("CSharpScript_uduq8")
+
+[node name="Sprite" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -11)
+animation = &"IdleDown"
+autoplay = "RunRight"
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+position = Vector2(0, -3)

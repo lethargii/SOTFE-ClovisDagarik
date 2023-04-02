@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://bc3bac8stsmpu"]
+
+[ext_resource type="PackedScene" uid="uid://dpyecs4g0tb1s" path="res://Characters/Character.tscn" id="1_uojc4"]
+[ext_resource type="Script" path="res://Characters/Ennemy.cs" id="2_bgxf5"]
+
+[node name="Ennemy" instance=ExtResource("1_uojc4")]
+script = ExtResource("2_bgxf5")
+
+[node name="Sprite" parent="." index="0"]
+animation = &""

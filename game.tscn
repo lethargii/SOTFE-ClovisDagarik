@@ -1,9 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://cieb5dm07p0qv"]
+[gd_scene load_steps=3 format=3 uid="uid://cj8fu0hqx1sqk"]
 
-[ext_resource type="PackedScene" uid="uid://dndj3qexdwnc8" path="res://Main_menu/MainMenu.tscn" id="1_cmoho"]
-[ext_resource type="Script" path="res://game.cs" id="1_flwh7"]
+[ext_resource type="Script" path="res://Game.cs" id="1_xungr"]
+[ext_resource type="PackedScene" uid="uid://dndj3qexdwnc8" path="res://Main_menu/MainMenu.tscn" id="2_0wjy8"]
 
 [node name="Game" type="Node"]
-script = ExtResource("1_flwh7")
+script = ExtResource("1_xungr")
 
-[node name="MainMenu" parent="." instance=ExtResource("1_cmoho")]
+[node name="MainMenu" parent="." instance=ExtResource("2_0wjy8")]

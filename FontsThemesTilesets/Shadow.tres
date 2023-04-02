@@ -1,9 +1,9 @@
 [gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://dqbcdadc4yv5"]
 
-[ext_resource type="Shader" path="res://Shadow.gdshader" id="1_lobq3"]
+[ext_resource type="Shader" path="res://FontsThemesTilesets/Shadow.gdshader" id="1_80uci"]
 
 [resource]
-shader = ExtResource("1_lobq3")
+shader = ExtResource("1_80uci")
 shader_parameter/shadow_color = Color(0, 0, 0, 0.784314)
 shader_parameter/x_translation = 1.0
-shader_parameter/y_translation = 0.0
+shader_parameter/y_translation = 24.0

@@ -12,5 +12,11 @@ public partial class Level : Node2D
 
 	public override void _Process(double delta)
 	{
+		if (Input.IsActionJustPressed("pause"))
+		{
+			GetTree().Paused = true;
+			PackedScene pauseMenu = (PackedScene)GD.Load("res://UI/PauseMenu/PauseMenu.tscn");
+			AddChild(pauseMenu.Instantiate());
+		}
 	}
 }
