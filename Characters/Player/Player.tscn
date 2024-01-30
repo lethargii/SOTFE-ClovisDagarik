@@ -11,3 +11,4 @@ script = ExtResource("2_rqoi3")
 [node name="Sprite" parent="." index="0"]
 material = ExtResource("3_tsapu")
 sprite_frames = ExtResource("3_od4jh")
+animation = &"IdleDown"

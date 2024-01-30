@@ -5,7 +5,7 @@ public partial class Character : CharacterBody2D
 {
 	string facing = "Down";
 	string state = "Idle";
-	Vector2 inputVector = Vector2.Zero;
+	public Vector2 inputVector = Vector2.Zero;
 	AnimatedSprite2D animatedSprite;
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
@@ -16,8 +16,10 @@ public partial class Character : CharacterBody2D
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta)
 	{
-		inputVector.X = (float) Input.GetActionStrength("ui_right") - Input.GetActionStrength("ui_left");
-		inputVector.Y = (float) Input.GetActionStrength("ui_down") - Input.GetActionStrength("ui_up");
+Move(delta);
+	}
+	public void Move(double delta)
+	{
 		inputVector = inputVector.Normalized();
 		if (inputVector != Vector2.Zero)
 		{
